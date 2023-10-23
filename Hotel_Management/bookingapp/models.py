@@ -54,7 +54,7 @@ class RoomImages(BaseModel):
     """Table For RoomImages"""
 
     room = models.ForeignKey(Room, on_delete=models.CASCADE, blank=True, null=True)
-    image = models.ImageField(upload_to="room/", default="")
+    image = models.ImageField(upload_to="roomimages/", default="")
 
 
 class Customer(BaseModel):
